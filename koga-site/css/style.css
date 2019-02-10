@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #141317;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  padding: 40px 100px;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content{
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle{
+  width: 100%;
+  margin-top: 150px;
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.description{
+  width: 100%;
+  margin-top: 16px;
+  opacity: 0.74;
+  /* background-color: aquamarine */
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.dividerLine{
+  border-bottom: 4px solid #F3114F;
+  width: 48px;
+  display: block;
+  margin-top: 48px;
+}
+
+.links{
+  padding: 56px 0;
+}
+
+.hidden{
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li:after {
+  content: "●";
+  margin-left: 16px;
+  color: #5F5E61;
+}
+
+li:last-child::after{
+  content: none;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.4s color ease;
+}
+
+li + li{
+  margin-left: 16px;
+}
+
+li a:hover {
+  color: #C2C1C2;
+}
+
+.workExperience{
+  display: flex;
+  flex-direction: column;
+}
+
+.xpHeadline{
+  margin: 0;
+  opacity: 0.32;
+  text-transform: uppercase;
+}
+
+h3{
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.xpHeadline{
+  margin: 0;
+  opacity: 0.32;
+  padding-bottom: 16px;
+  /* background-color: aquamarine */
+}
+
+.company{
+  opacity: 0.74;
+  padding-bottom: 32px;
+}
+
+.companyTitle{
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  display: block;
+  transition: 0.4s color ease;
+}
+
+.companyTitle:hover{
+  color: #C2C1C2;
+}
+
+.companyTitle a{
+  color: #C2C1C2;
+  text-decoration: none;
+}
+
+.companyRole{
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  display: block;
+}
+
+.grid{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .grid-item{
+  width: 256px;
+}
+
+.grid .grid-item + .grid-item{
+  margin-left: 16px;
+  padding-top: 114px;
+}
+
+.grid .small{
+  height: 192px;
+}
+
+.grid .medium{
+  height: 274px;
+}
+
+.grid .large{
+  height: 374px;
+}
+
+.grid .grid-item .grid-item-photo + .grid-item-photo{
+  margin-top: 16px;
+}
+
+.grid-item-photo{
+  display: block;
+}
+
+.instagram-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram-card img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.instagram-card .text-container{
+  box-shadow: inset 0px -110px 90px -40px rgba(0, 0, 0, 0.85);
+  transition: 0.6s box-shadow ease;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 16px 16px 16px;
+  flex-direction: column;
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.instagram-card .text-container .text{
+  display: flex;
+  align-items: center;
+}
+
+.instagram-card .text .logo-instagram{
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.instagram-card .text .profile{
+  color:#C2C1C2;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  transition: 0.4s color ease;
+}
+
+.instagram-card .text .profile:after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: 8px;
+  border-bottom: 2px solid #C2C1C2; 
+  border-right: 2px solid #C2C1C2; 
+  transform: rotate(-45deg);
+  display: block;
+  transition: 0.4s transform ease, 0.4s border ease;
+}
+
+.instagram-card:hover .text .profile:after{
+  transform: translateX(4px) rotate(-45deg);
+  border-color: white;
+}
+
+.instagram-card:hover .text .profile{
+  color: white;
+}
+
+.instagram-card:hover .text-container{
+  box-shadow: inset 0px -110px 80px -35px rgba(0, 0, 0, 0.88);
+}
