@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Heebo', sans-serif;
-  background-color: #000000;
+  /* background-color: #141317; */
+  background-color: black;
 }
 
 /* Style the header with a grey background and some padding */
@@ -43,7 +44,6 @@ body {
   width: 100%;
   margin-top: 16px;
   opacity: 0.74;
-  /* background-color: aquamarine */
   color: white;
   font-weight: 300;
   font-size: 16px;
@@ -127,7 +127,6 @@ h3{
   margin: 0;
   opacity: 0.32;
   padding-bottom: 16px;
-  /* background-color: aquamarine */
 }
 
 .company{
@@ -157,6 +156,10 @@ h3{
   color: white;
   font-weight: 300;
   display: block;
+}
+
+.grid-mobile{
+  display: none;
 }
 
 .grid{
@@ -262,4 +265,160 @@ h3{
 
 .instagram-card:hover .text-container{
   box-shadow: inset 0px -110px 80px -35px rgba(0, 0, 0, 0.88);
+}
+
+
+@media screen and (max-width:768px){
+
+  
+
+}
+
+
+@media screen and (max-width:414px){
+
+  .header {
+    padding: 40px;
+  }
+
+  .container{
+    padding: 0 40px;
+  }
+
+  .content{
+    width: 100%;
+    padding: 0;
+  }
+
+  .mainTitle{
+    width: 100%;
+    margin-top: 56px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .description{
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
+h3{
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.xpHeadline{
+  margin-top: 16px;
+}
+
+.companyTitle{
+  font-size: 20px;
+}
+
+.companyTitle:hover{
+  color: #C2C1C2;
+}
+
+.companyRole{
+  font-size: 18px;
+}
+
+  .grid{
+    display: none;
+  }
+
+  .grid-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grid-mobile .grid-item-mobile{
+    width: 50%;
+  }
+  
+  .grid-mobile .grid-item-mobile + .grid-item-mobile{
+    margin-left: 8px;
+    padding-top: 0;
+  }
+  
+  .grid-mobile .small-mobile{
+    height: 106px;
+  }
+  
+  .grid-mobile .medium-mobile{
+    height: 151px;
+  }
+  
+  .grid-mobile .large-mobile{
+    height: 206px;
+  }
+  
+  .grid-mobile .grid-item-mobile .grid-item-photo-mobile + .grid-item-photo-mobile{
+    margin-top: 8px;
+  }
+  
+  .grid-item-photo-mobile{
+    display: block;
+  }
+  
+  .instagram-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .instagram-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .instagram-card .text-container{
+    box-shadow: inset 0px -110px 90px -40px rgba(0, 0, 0, 0.85);
+    transition: 0.6s box-shadow ease;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 0 16px 16px 16px;
+    flex-direction: column;
+    display: flex;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .instagram-card .text-container .text{
+    display: flex;
+    align-items: center;
+  }
+  
+  .instagram-card .text .logo-instagram{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .instagram-card .text .profile{
+    color:#C2C1C2;
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    transition: 0.4s color ease;
+    text-decoration: underline;
+  }
+  
+  .instagram-card .text .profile:after{
+    display: none;
+  }
+    
+  .instagram-card:hover .text .profile{
+    color: white;
+  }
+  
+  .instagram-card:hover .text-container{
+    box-shadow: inset 0px -110px 80px -35px rgba(0, 0, 0, 0.88);
+  }
+
 }
